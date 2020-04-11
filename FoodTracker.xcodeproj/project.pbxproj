@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83BC0E2A24422DF500AE610B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC0E2924422DF500AE610B /* Meal.swift */; };
 		83DA6F622442132E00D57EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA6F612442132E00D57EC7 /* AppDelegate.swift */; };
 		83DA6F642442132E00D57EC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA6F632442132E00D57EC7 /* SceneDelegate.swift */; };
 		83DA6F662442132E00D57EC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA6F652442132E00D57EC7 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83BC0E2924422DF500AE610B /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		83DA6F5E2442132E00D57EC7 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83DA6F612442132E00D57EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83DA6F632442132E00D57EC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				83DA6F652442132E00D57EC7 /* ViewController.swift */,
 				83DA6F672442132E00D57EC7 /* Main.storyboard */,
 				83DA6F752442205000D57EC7 /* RatingControl.swift */,
+				83BC0E2924422DF500AE610B /* Meal.swift */,
 				83DA6F6A2442132F00D57EC7 /* Assets.xcassets */,
 				83DA6F6C2442132F00D57EC7 /* LaunchScreen.storyboard */,
 				83DA6F6F2442132F00D57EC7 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BC0E2A24422DF500AE610B /* Meal.swift in Sources */,
 				83DA6F762442205000D57EC7 /* RatingControl.swift in Sources */,
 				83DA6F662442132E00D57EC7 /* ViewController.swift in Sources */,
 				83DA6F622442132E00D57EC7 /* AppDelegate.swift in Sources */,
