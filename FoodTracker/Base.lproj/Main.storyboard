@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VsN-qP-N3T">
-                                <rect key="frame" x="20" y="64" width="374" height="428.5"/>
+                                <rect key="frame" x="20" y="64" width="374" height="480.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iY-Aj-vNn">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -46,6 +46,17 @@
                                             <outletCollection property="gestureRecognizers" destination="lnn-ae-A7d" appends="YES" id="hZV-ha-B0u"/>
                                         </connections>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s0A-vW-B12" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="436.5" width="252" height="44"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="starSize">
+                                                <size key="value" width="44" height="44"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starCount">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="FqY-2Y-Ez4" secondAttribute="trailing" id="MjJ-7E-SbN"/>
@@ -64,6 +75,7 @@
                         <outlet property="mealNameLabel" destination="9iY-Aj-vNn" id="QQZ-OP-LYH"/>
                         <outlet property="mealNameTextField" destination="FqY-2Y-Ez4" id="f65-Ha-OYe"/>
                         <outlet property="photoImageView" destination="bD9-vN-oXX" id="Arx-Ie-aWe"/>
+                        <outlet property="ratingControl" destination="s0A-vW-B12" id="jdU-Ma-TPs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
