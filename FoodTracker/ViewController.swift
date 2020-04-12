@@ -26,6 +26,14 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         mealNameTextField.delegate = self
         
         updateSaveButtonState()
+        
+        // Set up views if editing an existing Meal.
+        if let meal = meal {
+            navigationItem.title = meal.name
+            mealNameTextField.text = meal.name
+            photoImageView.image = meal.photo
+            ratingControl.rating = meal.rating
+        }
     }
     
     // MARK: UITextFieldDelegate
@@ -76,7 +84,15 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
 
     @IBAction func cancelAddMealButton(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+        // Depending on style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways.
+        let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        if isPresentingInAddMealMode {
+            dismiss(animated: true, completion: nil)
+        } else if let owningNavigationController = navigationController {
+            owningNavigationController.popViewController(animated: true)
+        } else {
+            fatalError("The MealViewController is not inside a navigation controller.")
+        }
     }
 
     // MARK: Action
